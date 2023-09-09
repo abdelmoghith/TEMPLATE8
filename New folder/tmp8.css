@@ -1,0 +1,759 @@
+
+*{
+    cursor: pointer;
+}
+html {
+    scroll-behavior: smooth;
+}
+.header{
+   background-image: url(milad-fakurian-DjjaZybYx4I-unsplash.jpg);
+    background-size: cover;
+    display: grid;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    margin:-8px;
+    padding:0;
+    height: 120vh;
+    grid-template-rows: 100px 1fr;
+    position: relative;
+}
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.552);
+    width: 95%;
+    margin: 0; 
+    padding: 30px;
+
+}
+.header .head .right ul li {
+    list-style: none;
+    margin: 30px;
+}
+.header .head .right ul li a {
+   text-decoration: none;
+   color: white;
+}
+.header .head .right ul li a:hover {
+    color: #274f61;
+}
+.header .head .right ul  {
+display: flex;
+}
+.right{
+    display: flex;
+    padding: 30px;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+}
+/* .right ul li:hover {
+    color: #274f61;
+  } */
+.right i {
+    border-left: 2px solid white;
+    padding: 10px;
+}
+.right i:hover{
+color: #6b3535;
+}
+.left{
+    display: flex;
+    align-items: center;
+    
+}
+.left i {
+    font-size: 30px;
+    margin: 10px 20px 10px 10px;
+
+}
+.left p {
+    font-size: 30px;
+    font-family: 'Gochi Hand', cursive;
+  color: #274f61;
+  font-weight: bold;
+}
+
+.disc{
+    position: absolute;
+    width: 50%;
+    height: 40vh;
+    top: 30%;
+    margin-left: 20px;
+    background-color: rgb(52 52 52 / 29%);
+    border-radius: 60px;
+    padding-left: 30px;
+    padding-bottom: 60px;
+}
+.disc p:first-child {
+    font-size: 40px;
+}
+.disc p:last-child {
+    font-size: 16px;
+}
+.intro{
+    text-align: center;
+    height: 500px;
+    display: grid;
+    place-content: center;
+    
+}
+.intro .serv{
+    position: relative;
+  width: min-content;
+ margin: 50px auto 30px ; 
+
+
+}
+.intro .serv::after{
+ content: "";
+ bottom: 0;
+ position: absolute;
+ width: 100%;
+ left: 0px;
+ bottom:-10px;
+ height: 2px;
+ background-color: black;
+}
+.intro .serv::before{
+ content: "";
+ bottom: 0;
+ position: absolute;
+ width: 20px;
+ left: 45%;
+ bottom:-20px;
+ height: 20px;
+ z-index: 1;
+ border-radius: 50%;
+ border: 2px solid black;
+ background-color: white;
+}
+.intro h1 {
+ 
+    font-size: 50px;
+   
+
+} 
+.intro p {
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+} 
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 500px;
+    gap: 10px;
+    font-family: 'Kanit', sans-serif;
+    
+}
+.grid h3 {
+    font-size: 30px;
+    color: rgb(23 133 183);
+}
+.top1{
+    background-color: rgba(52, 52, 52, 0.058);
+    padding-left: 70px;
+    padding-top: 30px;
+    position: relative;
+    border-radius: 40px;
+    
+}
+.top1 i {
+    font-size: 30px;
+    position: absolute;
+    left: 15px;
+    top:70px ;
+    color: black;
+   
+}
+.top1 p{
+margin-top: -25px;
+color: #6b3535;
+}
+.bfr{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bfr i {
+    font-size: 40px;
+    margin: 10px 20px 10px 10px;
+
+}
+.bfr p {
+    font-size: 50px;
+    font-family: 'Gochi Hand', cursive;
+  color: #274f61;
+  font-weight: bold;
+  
+}
+
+.intro2{
+    height: 500px;
+    background-image: url(joanna-kosinska-1_CMoFsPfso-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+    font-family: 'Kanit', sans-serif;
+    margin: -8px;
+}
+.social{
+    width: 400px;
+    height: 200px;
+position: absolute;
+font-size: 14px;
+padding: 30px;
+right: 20px;
+top: 15%;
+line-height: 40px;
+}
+.social i {
+    margin: 15px;
+}
+.ketba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.ketba1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.ketba1 p {
+    margin: 25px;
+    text-transform: capitalize;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    background-color: #3095c4;
+    color: white;
+    border-radius: 20px;
+}
+.intro3 p{
+   margin: 5px;
+   text-transform: capitalize;
+   padding: 10px;
+   
+}
+.intro3 p:first-child{
+  background-color: #3095c4;
+  color: white;
+  border-radius: 30px;
+   
+}
+.pictures1{
+    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    margin-top: 50px;
+    gap: 3px;
+    
+   
+}
+.test:hover .pic1,
+.test:hover .pic2,
+.test:hover .pic3,
+.test:hover .pic4,
+.test:hover .pic5,
+.test:hover .pic6,
+.test:hover .pic7,
+.test:hover .pic8
+ {
+    opacity: 0.5;
+}
+.test {
+    position: relative;
+    border-radius: 10px;
+   
+}
+.test:hover .tel3a{
+    visibility: visible;
+}
+.pic1{
+    background-image: url(sebastian-svenson-L8SGAFu6c-k-unsplash.jpg);
+    background-size: cover;
+    transition: 0.1s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+
+}
+.tel3a{
+    position: absolute;
+    bottom: 0;
+    transition: 0.1s;
+    transition-timing-function: ease;
+  visibility: hidden;
+    width: 100%;
+    height: 50%;
+    background-color: #ffffff70;
+}
+.pic2{
+    background-image: url(milad-fakurian-seA-FPPXL-M-unsplash.jpg);
+    background-size: cover;
+    transition: 0.1s;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.pic3{
+    background-image: url(milad-fakurian-Z4OLYXto_o8-unsplash.jpg);
+    background-size: cover;
+    transition: 0.1s;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.pic4{
+    background-image: url(sebastian-svenson-8QgqOLJAL8k-unsplash.jpg);
+    background-size: cover;
+    transition: 0.1s;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.pic5{
+    background-image: url(sebastian-svenson-d2w-_1LJioQ-unsplash.jpg);
+    background-size: cover;
+    transition: 0.1s;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.pic6{
+    background-image: url(milad-fakurian-Z4OLYXto_o8-unsplash.jpg);
+    background-size: cover;
+    transition: 0.1s;
+    width: 100%;
+    border-radius: 30px;
+    height: 100%;
+}
+.pic7{
+    background-image: url(milad-fakurian-seA-FPPXL-M-unsplash.jpg);
+    background-size: cover;
+    transition: 0.1s;
+    width: 100%;
+    border-radius: 30px;
+    height: 100%;
+}
+.pic8{
+    background-image: url(milad-fakurian-PGdW_bHDbpI-unsplash.jpg);
+    background-size: cover;
+    transition: 0.1s;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.intro80{
+    height: 540px;
+    background-image: url(milad-fakurian-VbC-EiOTDqA-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+    color: white;
+    margin: -8px;
+    z-index: -1;
+   
+}
+
+.photo11{
+    width:200px ;
+    height: 200px;
+    background-image: url(photo_2023-09-02_23-31-00.jpg);
+    background-size: cover;
+    position: absolute;
+    right: 50px;
+    border-radius: 50%;
+    top: 45% ;
+}
+.photo11::before {
+    content: "";
+    width: 29px;
+    height: 186px;
+    background-color: rgba(63, 50, 50, 0.304);
+    position: absolute;
+    right: -3px;
+    top: 9px;
+    border-radius: 20px;
+    z-index: -1;
+}
+.ketba11{
+    position: absolute;
+    margin: 50px 50px;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    gap: 10px;
+    color: #ffffff5e;
+}
+.html ,
+.css ,
+.js ,
+.framework{
+    width: 540px;
+    height: 60px;
+    margin: 20px auto;
+    display: grid;
+    text-transform: capitalize;
+    font-size: 21px;
+    border-radius: 20px;
+    grid-template-rows: 25px  35px;
+   
+}
+.html1 ,
+.css1 ,
+.js1 ,
+.framework1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px ;
+    padding-right:20px ;
+    font-family: 'Kanit', sans-serif;
+   
+  
+}
+.html2 ,
+.css2 ,
+.js2 ,
+.framework2{
+    background-color: #ffffff30;
+    position: relative;
+    border-radius: 20px;
+   
+}
+.html2::after{
+    content: "";
+    height: 100%;
+    width: 95%;
+    position: absolute;
+    background: linear-gradient(80deg, rgb(24, 40, 62) 0%, #eeeeee6e 100%);;
+    border-radius: 20px;
+
+}
+.css2::after{
+    content: "";
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    background: linear-gradient(80deg, rgb(24, 40, 62) 0%, #eeeeee6e 100%);;
+    border-radius: 20px;
+
+}
+.js2::after{
+    content: "";
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    background: linear-gradient(80deg, rgb(24, 40, 62) 0%, #eeeeee6e 100%);;
+    border-radius: 20px;
+
+}
+.framework2::after{
+    content: "";
+    height: 100%;
+    width: 75%;
+    position: absolute;
+    background: linear-gradient(80deg, rgb(24, 40, 62) 0%, #eeeeee6e 100%);;
+    border-radius: 20px;
+
+}
+.cardes{
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 30px;
+   
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: capitalize;
+    font-family: 'Hanken Grotesk', sans-serif;
+    line-height: 25px;
+    color: white;
+    border: 1px solid black;
+    background-image: linear-gradient(hsl(252, 100%, 67%) , hsl(241, 81%, 54%));
+    border-radius: 50px;
+}
+.card h2 {
+    padding: 20px;
+    background-image: linear-gradient( hsl(170.77deg 65.56% 51.99% / 43%) ,hsla(241, 72%, 46%, 0) );
+    border-radius: 50px;
+    color: black;
+}
+.card h2:hover {
+    color:white;
+} 
+.card h3 {
+    text-transform: uppercase;
+    color:white;
+}
+.card p:first-of-type {
+    font-size: 60px;
+    margin: 5px;
+   padding-left: 70px;
+   padding-right: 70px;
+   padding-bottom: 30px;
+   color: black;
+    border-bottom: 2px solid red;
+}
+.card p {
+    font-size: 20px;
+    border-bottom: 2px solid rgb(0 255 239 / 71%);
+}
+.footer{
+    background-image: url(milad-fakurian-Z4OLYXto_o8-unsplash.jpg);
+    background-size: cover;
+    background-position: 10%;
+    height: 400px;
+    color: #fff ;
+    border-radius: 50px;
+    z-index: -3;
+
+}
+.footer h2{
+    text-align: center;
+   width: max-content;
+    margin: auto;
+    padding-top: 160px;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.167);
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+.footx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 100px;
+}
+.foot p{
+    margin-left: 100px;
+    font-size: 25px;
+    font-family: 'Gochi Hand', cursive;
+  color: #274f61;
+  font-weight: bold;
+
+}
+.foot i {
+    margin: 20px;
+}
+.foot i:hover ,
+.foot p:hover {
+  color: #6b3535;
+}
+.copyrigh{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 15px;
+    word-spacing: 10px;
+}
+@media (max-width:768px) {
+    .head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.552);
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        height: 175px;
+        padding-top: 0;
+    
+    }
+    .right{
+        display: flex;
+        padding: 0px;
+        margin: 0;
+     
+    }
+    .header .head .right ul li {
+        list-style: none;
+        margin: 10px;
+        padding: 0;
+    }
+    .header .head .right ul {
+        padding: 0;
+    }
+    .left i {
+        font-size: 40px;
+        margin: 50px 20px 10px 10px;
+    
+    }
+    .left p {
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+    .disc{
+        position: absolute;
+        width: 80%;
+        height: 60vh;
+        top: 30%;
+        margin-left: 20px;
+        background-color: rgb(52 52 52 / 29%);
+        border-radius: 60px;
+        padding-left: 30px;
+        padding-bottom: 60px;
+    }
+    .intro{
+       padding: 15px;
+        
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+      padding: 10px;
+      height: auto;
+        
+    }
+    .intro3 {
+      height: 2750px;
+        
+     }
+    .pictures1{
+        height: 2300px;
+      width: auto;
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        grid-template-rows: repeat(28, 1fr);
+        margin-top: 50px;
+        gap: 5px;
+        
+       
+    }
+    .pic1{
+        width: 100%;
+        height: 320px;
+        margin-top: 2280px;
+    }
+    .pic2{
+        width: 100%;
+        height: 320px;
+    }
+    .pic3{
+        width: 100%;
+        height: 320px;
+    }
+    .pic4{
+        width: 100%;
+        height: 320px;
+    }
+    .pic5{
+        width: 100%;
+        height: 320px;
+    }
+    .pic6{
+        width: 100%;
+        height: 320px;
+    }
+    .pic7{
+        width: 100%;
+        height: 320px;
+    }
+    .pic8{
+        width: 100%;
+        height: 320px;
+    }
+    .right i {
+      display: none;
+    }
+    .intro2{
+        margin: 0px;
+        width: auto;
+        height: 600px;
+        background-position: 15%;
+     
+    }
+    .social{
+        width: 300px;
+        height: 250px;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    }
+    .social i{
+        color: #eee;
+    }
+    .ketba11{
+        position: absolute;
+        margin: 50px 50px;
+        display: grid;
+        grid-template-rows: repeat(4,1fr);
+        gap: 10px;
+        color: #ffffff5e;
+        width: auto;
+    }
+    .html ,
+    .css ,
+    .js ,
+    .framework{
+        width: 300px;
+        height: 60px;
+        margin: 20px auto;
+        display: grid;
+        text-transform: capitalize;
+        font-size: 21px;
+        border-radius: 20px;
+        grid-template-rows: 25px  35px;
+       
+    }
+    .photo11{
+        width:200px ;
+        height: 200px;
+        background-image: url(photo_2023-09-02_23-31-00.jpg);
+        background-size: cover;
+        right: 75px;
+        border-radius: 50%;
+        margin-top: 180px;
+
+        display: block;
+    }
+    .intro80{
+        height: 800px;
+    }
+    .cardes {
+        height: 2000px;
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        grid-template-rows: repeat(4 , 1fr);
+        gap: 10px;
+        margin: auto;
+    }
+    .foot p {
+        margin-left: 10px;
+        font-size: 25px;
+        font-family: 'Gochi Hand', cursive;
+        color: #274f61;
+        font-weight: bold;
+    }
+    .foot i {
+        margin:15px
+    }
+    .footer{
+        height: 300px;
+    }
+    .footer h2{
+        padding-top: 75px;
+    }
+}
+    
